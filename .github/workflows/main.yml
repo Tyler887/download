@@ -12,13 +12,13 @@ on:
 
  workflow_dispatch 
 
-inputs:
+   inputs:
 
-  extra:
+       extra:
+ 
+        description: 'Other packages to download (seperated by spaces)'
 
-   description: 'Other packages to download (seperated by spaces)'
-
-   required: false
+         required: false
 
     
 
