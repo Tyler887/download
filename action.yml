@@ -3,7 +3,9 @@
 name: Download & Install
 description: Add your own software into Windows runners
 branding:
-
+  icon: 'arrow-down-circle'
+  color: 'blue'
+  
 # Controls when the workflow will run
 on:
  workflow_dispatch 
