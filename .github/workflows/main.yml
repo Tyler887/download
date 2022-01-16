@@ -47,4 +47,4 @@ jobs:
 
           echo "::notice::Package install begins!"
 
-          choco install gh hub edge-dev truffleruby ruby jruby mruby chrome-canary powertoys
+          choco install gh hub edge-dev truffleruby ruby jruby chrome-canary powertoys --no-progress ----allow-unofficial
