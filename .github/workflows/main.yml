@@ -12,14 +12,11 @@ on:
 
  workflow_dispatch 
 
-   inputs:
+  
 
-       extra:
+  
  
-        description: 'Other packages to download (seperated by spaces)'
-
-         required: false
-
+        
     
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -48,6 +45,6 @@ jobs:
 
         run: |
 
-          echo "Package install begins!"
+          echo "::notice::Package install begins!"
 
-          choco install gh hub edge-dev truffleruby jruby mruby chrome-canary powertoys ${{ github.event.inputs.extra }}
+          choco install gh hub edge-dev truffleruby ruby jruby mruby chrome-canary powertoys
